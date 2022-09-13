@@ -175,8 +175,8 @@ class Settings extends Dbal implements ArrayAccess
 	{
 		$this->__unset($i);
 	}
-
-	public function offsetGet($i): mixed
+	#[\ReturnTypeWillChange]
+	public function offsetGet($i) //: mixed
 	{
 		return $this->__get($i);
 	}
